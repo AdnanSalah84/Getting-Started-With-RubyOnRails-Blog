@@ -1,4 +1,8 @@
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+<h1>New article</h1>
+
+<%= render 'form' %> <!--Using partials to clean up duplication in views -->
+
+<!--<%= form_with scope: :article, url: articles_path, local: true do |form| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -25,6 +29,6 @@
   <p>
     <%= form.submit %>
   </p>
-<% end %>
+<% end %>-->
 
 <%= link_to 'Back', articles_path %>

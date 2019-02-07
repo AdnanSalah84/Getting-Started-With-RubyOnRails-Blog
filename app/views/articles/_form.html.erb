@@ -1,9 +1,4 @@
-
-<h1>Edit article</h1>
- 
- <%= render 'form' %> <!--Using partials to clean up duplication in views -->
- 
-<!--<%= form_with(model: @article, local: true) do |form| %>
+<%= form_with model: @article, local: true do |form| %>
  
   <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -33,6 +28,4 @@
     <%= form.submit %>
   </p>
  
-<% end %>-->
- 
-<%= link_to 'Back', articles_path %>
+<% end %>
